@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#content {
+    background-image: url('../images/IMG_5414.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav {
+    flex: 1;
+    width: 100vw;
+}
+
+section {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px double rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+footer {
+    flex: 1;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 5em;
+    text-shadow: 2px 2px 10px gray;
+}
+
+p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 10px gray;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 10px;
+    margin: 20px;
+    background: rgb(0, 0, 0, 0);
+    width: 150px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background: gray;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+li {
+    display: inline-block;
+    flex: 1;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.568);;
+}
+
+#logo {
+    flex: 4;
+    text-align: left;
+
+    align-items: flex-start;
+}
+
+
