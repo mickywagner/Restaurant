@@ -34,6 +34,21 @@ section {
 
 footer {
     flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    max-height: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    background:  rgba(24, 124, 58, 0.7);
+}
+
+footer ul {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-style: italic;
+    background: none;
 }
 
 h1 {
