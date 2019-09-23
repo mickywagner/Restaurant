@@ -12,18 +12,24 @@ function pageLoad() {
     content.appendChild(section);
     content.appendChild(footer);
 
+    let sectionDiv = document.createElement('div')
+    sectionDiv.setAttribute("class", "about")
+    
+
     let header = document.createElement('h1');
     let tag = document.createElement('p')
+    tag.setAttribute("class", "center")
     let button = document.createElement('button')
-    header.textContent = 'Welcome To Fig Tree';
-    tag.textContent = 'Discover bold new flavors with our delicious & healthy foods'
+    header.textContent = 'Welcome to Fig Tree';
+    tag.textContent = 'Discover bold new flavors with our delicious & healthy foods made from wholesome, organic ingredients. Straight from the farm to your table.'
     button.textContent = 'Book a Table'
     
-    section.appendChild(header);
-    section.appendChild(tag);
-    section.appendChild(button);
+    sectionDiv.appendChild(header);
+    sectionDiv.appendChild(tag);
+    sectionDiv.appendChild(button);
+    section.appendChild(sectionDiv);
 
-    let navContent = ['Fig Tree', 'Home', 'About', 'Menu', 'Contact']
+    let navContent = ['Fig Tree', 'About', 'Menu', 'Contact']
     let footContent = ['55 Main St, Nowhere 11111', '555-555-5555', 'Social Media']
 
     let navList = document.createElement('ul');

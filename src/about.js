@@ -1,8 +1,22 @@
 function aboutTab() {
     let section = document.querySelector('section')
-    section.textContent = `At Fig Tree we're all about making the most out of every meal. That's why each item on our menu is specifically designed to provide you with all the nutrients you need!`
+    section.textContent = ""
 
-    // Build form
+    let div = document.createElement('div')
+
+    div.setAttribute("class", "about")
+
+    section.appendChild(div)
+
+    let para = document.createElement('p')
+    let h1 = document.createElement('h1')
+    h1.textContent = "About Us"
+
+    para.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    div.appendChild(h1)
+    div.appendChild(para)
+
 }
 
 export { aboutTab }

@@ -11,7 +11,7 @@ contact.addEventListener('click', function() {
     contactTab()
 })
 
-let home = document.querySelector('#Home')
+let home = document.querySelector('#logo')
 home.addEventListener('click', function() {
     console.log('home')
     location.reload()
