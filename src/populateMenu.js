@@ -3,11 +3,15 @@ function populateMenu(element, menu, array) {
         let menuItem = document.createElement('li')
 
         menuItem.textContent = array[i]
-        menu.appendChild(menuItem);
 
         if(array[i] == 'Fig Tree') {
             menuItem.setAttribute("id", "logo")
+        } else {
+            menuItem.setAttribute("id", `${array[i]}`)
         }
+
+        menu.appendChild(menuItem);
+
     }
     element.appendChild(menu)
 }

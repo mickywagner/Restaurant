@@ -21,9 +21,14 @@ nav {
     width: 100vw;
 }
 
+nav li:hover {
+    background: green;
+}
+
 section {
     flex: 4;
     display: flex;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
