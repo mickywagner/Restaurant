@@ -1,4 +1,5 @@
 import { populateMenu } from './populateMenu.js'
+import { render } from './render.js';
 
 function pageLoad() {
     let content = document.querySelector("#content");
@@ -14,19 +15,11 @@ function pageLoad() {
 
     let sectionDiv = document.createElement('div')
     sectionDiv.setAttribute("class", "about")
-    
 
-    let header = document.createElement('h1');
-    let tag = document.createElement('p')
-    tag.setAttribute("class", "center")
-    let button = document.createElement('button')
-    header.textContent = 'Welcome to Fig Tree';
-    tag.textContent = 'Discover bold new flavors with our delicious & healthy foods made from wholesome, organic ingredients. Straight from the farm to your table.'
-    button.textContent = 'Book a Table'
+    let welcome = '<h1>Welcome to Fig Tree</h1><p>Discover bold new flavors with our delicious & healthy foods made from wholesome, organic ingredients. Straight from the farm to your table.</p><button>Book A Table</button>'
     
-    sectionDiv.appendChild(header);
-    sectionDiv.appendChild(tag);
-    sectionDiv.appendChild(button);
+    render(welcome, sectionDiv)
+    
     section.appendChild(sectionDiv);
 
     let navContent = ['Fig Tree', 'About', 'Menu', 'Contact']

@@ -23,7 +23,6 @@ function menuTab() {
     content.appendChild(menuDiv)
 
     section.appendChild(content)
-
 }
 
 export { menuTab }
