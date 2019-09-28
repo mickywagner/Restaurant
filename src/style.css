@@ -8,7 +8,7 @@
 }
 
 #content {
-    /* background-image: url('../images/IMG_5414.jpg'); */
+    background-image: url('../images/IMG_5414.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ section {
     flex: 4;
     display: flex;
     width: 80%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 10px double rgba(255, 255, 255, 0.5);
@@ -73,9 +73,18 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: rgba(24, 124, 58);
+    text-decoration: underline;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    font-family: 'Caesar Dressing', cursive;
+}
+
 p {
     font-size: 1.5em;
     text-shadow: 2px 2px 5px rgb(75, 75, 75);
+    margin-bottom: 10px;
 }
 
 button {
@@ -83,7 +92,7 @@ button {
     border-radius: 10px;
     font-size: 1em;
     padding: 10px;
-    margin: 20px;
+    margin: 5px;
     background: rgba(24, 124, 58, 0.7);
     width: 150px;
     align-self: center;
@@ -132,13 +141,16 @@ li {
     background: white;
     text-align: center;
     color: black;
+    padding: 10px;
+    border: 1px solid  rgba(24, 124, 58, 0.7);
+
 }
 
 .form input, textarea {
     display: block;
+    padding: 5px;
     width: 70%;
     margin: 10px auto;
-    padding: 5px;
 }
 
 .form textarea {
@@ -156,5 +168,29 @@ li {
 }
 
 .menu {
+    max-height: 200px;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu p {
+    font-size: 1em;
+    font-style: italic;
+    margin: 10px;
+}
+
+.contact {
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+}
+
+
+.contact p {
+    font-size: 1em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
