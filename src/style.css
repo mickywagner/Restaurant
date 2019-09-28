@@ -8,7 +8,7 @@
 }
 
 #content {
-    background-image: url('../images/IMG_5414.jpg');
+    /* background-image: url('../images/IMG_5414.jpg'); */
     background-size: cover;
     display: flex;
     flex-direction: column;

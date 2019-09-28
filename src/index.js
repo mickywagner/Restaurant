@@ -2,7 +2,8 @@ import { pageLoad } from './home.js';
 import { contactTab } from './contact.js';
 import { menuTab } from './menu.js';
 import { aboutTab } from './about.js';
-import { welcomeTab } from './welcome.js'
+import { welcomeTab } from './welcome.js';
+import './style.css';
 
 pageLoad()
 
