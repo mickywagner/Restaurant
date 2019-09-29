@@ -1,38 +1,36 @@
-import { populateMenu } from './populateMenu.js'
-import { render } from './render.js';
+import { populateMenu } from './populateMenu';
+import { render } from './render';
 
 function pageLoad() {
-    let content = document.querySelector("#content");
-    let contentStyle = content.style.backgroundImage = "url('https://foodrevolution.org/wp-content/uploads/blog-featured_healthy_foods-20180306.jpg')";
-    
-    let nav = document.createElement('nav');
-    let section = document.createElement('section');
-    let footer = document.createElement('footer');
+  const content = document.querySelector('#content');
+  const contentStyle = content.style.backgroundImage = "url('https://foodrevolution.org/wp-content/uploads/blog-featured_healthy_foods-20180306.jpg')";
 
-    content.appendChild(nav);
-    content.appendChild(section);
-    content.appendChild(footer);
+  const nav = document.createElement('nav');
+  const section = document.createElement('section');
+  const footer = document.createElement('footer');
 
-    let sectionDiv = document.createElement('div')
-    sectionDiv.setAttribute("class", "about")
+  content.appendChild(nav);
+  content.appendChild(section);
+  content.appendChild(footer);
 
-    let welcome = '<h1>Welcome to Fig Tree</h1><p>Discover bold new flavors with our delicious & healthy foods made from wholesome, organic ingredients. Straight from the farm to your table.</p><button>Book A Table</button>'
-    
-    render(welcome, sectionDiv)
-    
-    section.appendChild(sectionDiv);
+  const sectionDiv = document.createElement('div');
+  sectionDiv.setAttribute('class', 'about');
 
-    let navContent = ['Fig Tree', 'About', 'Menu', 'Contact']
-    let footContent = ['55 Main St, Nowhere 11111', '555-555-5555', 'Social Media']
+  const welcome = '<h1>Welcome to Fig Tree</h1><p>Discover bold new flavors with our delicious & healthy foods made from wholesome, organic ingredients. Straight from the farm to your table.</p><button>Book A Table</button>';
 
-    let navList = document.createElement('ul');
-    let footList = document.createElement('ul')
+  render(welcome, sectionDiv);
 
-    populateMenu(nav, navList, navContent);
+  section.appendChild(sectionDiv);
 
-    populateMenu(footer, footList, footContent);
+  const navContent = ['Fig Tree', 'About', 'Menu', 'Contact'];
+  const footContent = ['55 Main St, Nowhere 11111', '555-555-5555', 'Social Media'];
+
+  const navList = document.createElement('ul');
+  const footList = document.createElement('ul');
+
+  populateMenu(nav, navList, navContent);
+
+  populateMenu(footer, footList, footContent);
 }
 
-export { pageLoad }
-
-
+export { pageLoad };

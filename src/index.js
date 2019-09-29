@@ -1,28 +1,28 @@
-import { pageLoad } from './home.js';
-import { contactTab } from './contact.js';
-import { menuTab } from './menu.js';
-import { aboutTab } from './about.js';
-import { welcomeTab } from './welcome.js';
+import { pageLoad } from './home';
+import { contactTab } from './contact';
+import { menuTab } from './menu';
+import { aboutTab } from './about';
+import { welcomeTab } from './welcome';
 import './style.css';
 
-pageLoad()
+pageLoad();
 
-let contact = document.querySelector('#Contact')
-contact.addEventListener('click', function() {
-    contactTab()
-})
+const contact = document.querySelector('#Contact');
+contact.addEventListener('click', () => {
+  contactTab();
+});
 
-let home = document.querySelector('#logo')
-home.addEventListener('click', function() {
-    welcomeTab()
-})
+const home = document.querySelector('#logo');
+home.addEventListener('click', () => {
+  welcomeTab();
+});
 
-let about = document.querySelector('#About')
-about.addEventListener('click', function() {
-    aboutTab()
-})
+const about = document.querySelector('#About');
+about.addEventListener('click', () => {
+  aboutTab();
+});
 
-let menu = document.querySelector('#Menu')
-menu.addEventListener('click', function() {
-    menuTab()
-})
+const menu = document.querySelector('#Menu');
+menu.addEventListener('click', () => {
+  menuTab();
+});
