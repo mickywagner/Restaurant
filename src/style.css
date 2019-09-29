@@ -83,7 +83,7 @@ h3 {
 
 p {
     font-size: 1.5em;
-    text-shadow: 2px 2px 5px rgb(75, 75, 75);
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -169,6 +169,7 @@ li {
 
 .menu {
     max-height: 200px;
+    font-size: 1em;
     overflow: scroll;
     display: flex;
     flex-direction: column;
@@ -176,13 +177,13 @@ li {
 }
 
 .menu p {
-    font-size: 1em;
     font-style: italic;
     margin: 10px;
 }
 
 .menu h3 {
     margin: 10px;
+    font-size: 1.5em;
 }
 
 .contact {
