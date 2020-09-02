@@ -1,6 +1,7 @@
 # Restaurant Page
 <h3>Screenshots</h3>
-![](/images/page.gif)
+<img src="page.gif">
+
 
 <h3>About This Project</h3>
 <p>This is a simple restaurant page I made for the Javascript course on <a href="https://www.theodinproject.com/">Odin Project</a>. The goal was 
