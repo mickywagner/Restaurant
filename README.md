@@ -2,6 +2,7 @@
 <h3>Screenshots</h3>
 ![](page.gif)
 
+
 <h3>About This Project</h3>
 <p>This is a simple restaurant page I made for the Javascript course on <a href="https://www.theodinproject.com/">Odin Project</a>. The goal was 
 to continue practicing DOM manipulation and dynamically rendering elements using vanilla Javascript and webpack.
