@@ -1,6 +1,6 @@
 # Restaurant Page
 <h3>Screenshots</h3>
-![screenshot](page.gif)
+<img src="page.gif">
 
 
 <h3>About This Project</h3>
